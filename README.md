@@ -1,3 +1,7 @@
+Ive taken tge waveshare code amd msde changes to get it working on Sunton 7 inch 
+
+Hope it helos someone 
+
 Hi,
 
 

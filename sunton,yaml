@@ -226,7 +226,7 @@ text_sensor:
               disabled: !lambda return ((0 == x.compare(std::string{"unavailable"})) or (0 == x.compare(std::string{"unknown"})));
   - platform: homeassistant
     id: volume_percentage
-    entity_id: media_player.lounge_speakers
+    entity_id: media_player.sunton_7
     attribute: volume_level
     on_value:
       then:
@@ -421,7 +421,7 @@ lvgl:
                       - homeassistant.action:
                           action: media_player.volume_down
                           data:
-                            entity_id: media_player.lounge_speakers
+                            entity_id: media_player.sunton_7
                   widgets:
                     - label:
                         text: "$volume_minus" # mdi-volume-minus
@@ -443,7 +443,7 @@ lvgl:
                       - homeassistant.action:
                           action: media_player.volume_up
                           data:
-                            entity_id: media_player.lounge_speakers
+                            entity_id: media_player.sunton_7
                   widgets:
                     - label:
                         text: "$volume_plus" # mdi-volume-plus
@@ -693,6 +693,17 @@ microphone:
     channel: left
     sample_rate: 16000
     bits_per_sample: 16bit
+  
+media_player:
+  - platform: speaker
+    name: None
+    id: echo_media_player
+    announcement_pipeline:
+      speaker: box_speaker
+      format: WAV
+    codec_support_enabled: false
+    buffer_size: 6000
+    volume_min: 0.4
 
 output:
   - id: backlight_output

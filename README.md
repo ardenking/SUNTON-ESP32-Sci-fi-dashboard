@@ -1,5 +1,9 @@
 Ive taken the waveshare code amd made changes to get it working on Sunton 7 inch 
 
+Added media player option as the Sunton has a speaker header 
+
+https://youtube.com/shorts/nNPwBf1A79Y?si=jxZwlp0ln8G30vBg
+
 Hope it helos someone 
 
 Hi,
